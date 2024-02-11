@@ -1,4 +1,6 @@
-# Team-TermiNULL-Coders-IIT-Dharwad-Student-Portal-Parsec-4.0-DevHack-5.0
+# Team:TermiNULL-Coders
+# Project: IIT-Dharwad-Student-Portal
+# Event: Parsec-4.0-DevHack-5.0
 
 ## Project Overview
 
