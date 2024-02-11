@@ -1,0 +1,156 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6d55a1; /* Purple background color */
+            color: #fff;
+        }
+
+        header {
+            background-color: #4a3c8c; /* Darker purple header */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #5c4d97; /* Dark purple navigation background */
+            padding: 10px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            animation: fadeInUp 1s ease-in-out;
+            margin-bottom: 0%;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background-color: #8b79bb; /* Light purple card background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            flex: 0 1 calc(48% - 20px);
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+            
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .card img {
+            width: 100%;
+            height:50%;
+            /* height: 150px; Set a fixed height for all images */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .card button {
+            background-color: #4a3c8c; /* Darker purple button color */
+            color: #fff;
+            border: none;
+            padding: 12px 20px; /* Added padding */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform-origin: center;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out, pulse 2s infinite ease-in-out; /* Added animations */
+            
+        }
+
+        .card button:hover {
+            background-color: #5c4d97; /* Dark purple button color on hover */
+            transform: scale(1.05); /* Scale on hover */
+        }
+
+        /* Additional styles for the button animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        
