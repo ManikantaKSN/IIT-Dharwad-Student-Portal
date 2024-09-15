@@ -37,13 +37,13 @@ The IITDH Student Portal is a web application for IIT Dharwad students, providin
 ## Setup Instructions
 
 1. **Clone the Repository:**
-   git clone https://github.com/your-repo/iitdh-student-portal.git
-   cd iitdh-student-portal
+   - git clone https://github.com/your-repo/iitdh-student-portal.git
+   - cd iitdh-student-portal
 2. **Install Dependencies**
-    npm install
+   - npm install
 3. **Run the application**
-    npm start
-*The application will be accessible at http://localhost:3000.*
+   - npm start
+- *The application will be accessible at http://localhost:3000.*
 
 ## Usage
 1. Visit the homepage to access quick links, view upcoming events, and explore the discussion forum.
