@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Questions</title>
+    <link rel="stylesheet" href="/css/answer_questions.css">
+</head>
+<body>
+    <a href="/home" style="text-decoration:none;">
+        <header class="header">
+            <div>
+                <img src="/img/logo.png" alt="IIT Dharwad Logo">
+                <h1>IIT Dharwad Student Portal</h1>
+            </div>
+        </header>
+    </a>
+    <div class="container">
+        <div class="card">
+            <h2>Answer Questions</h2>
+            <form action="/answer_questions" method="post">
+                <label for="selected_question">Select a Question to Answer:</label>
+                <select id="selected_question" name="selected_question" required>
+                    <% questions.forEach(question => { %>
+                        <option value="<%= question._id %>"><%= question.quest %></option>
+                    <% }); %>
+                </select>
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="answer">Your Answer:</label>
+                <textarea id="answer" name="answer" rows="4" required></textarea>
+                <button type="submit">Submit Answer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

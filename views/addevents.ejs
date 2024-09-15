@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/add_events.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/img/logo.png" alt="IIT Dharwad Logo">
+            <h1>IIT Dharwad Student Portal</h1>
+        </div>
+    </header>
+
+    <form method="POST" action="/addevents" style="display: block;">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required><br>
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required><br>
+
+        <label for="eventDescription">Event Description:</label>
+        <textarea id="eventDescription" name="eventDescription" required></textarea><br>
+
+        <label for="eventVenue">Event Venue:</label>
+        <textarea id="eventVenue" name="eventVenue" required></textarea><br>
+
+        <label for="eventType">Event Type:</label>
+        <select id="eventType" name="eventType" required>
+            <option value="Academics">Academics</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Sports">Sports</option>
+            <option value="Technical">Technical</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+        </select><br><br>
+
+        <input type="submit" value="Add Event">
+    </form>
+</body>
+</html>

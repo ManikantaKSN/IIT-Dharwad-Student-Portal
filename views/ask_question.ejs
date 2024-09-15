@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ask_question.css">
+</head>
+<body>
+    <a href="/home" style="text-decoration:none;">
+        <header class="header">
+            <div>
+                <img src="/img/logo.png" alt="IIT Dharwad Logo">
+                <h1>IIT Dharwad Student Portal</h1>
+            </div>
+        </header>
+    </a>
+    <div class="container">
+        <img src="/img/question.png" style="width:40%" alt="Side Image" class="side-image">
+        <div class="card">
+            <h2>Ask a Question</h2>
+
+            <% if (typeof message !== 'undefined') { %>
+                <p><%= message %></p>
+                <% if (redirect) { %>
+                    <script>
+                        setTimeout(function() {
+                            window.location.href = '<%= redirect %>';
+                        }, 2000); // Redirect after 2 seconds
+                    </script>
+                <% } %>
+            <% } %>
+
+            <form action="/ask_question" method="post">
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" required>
+
+                <button type="submit">Submit Question</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

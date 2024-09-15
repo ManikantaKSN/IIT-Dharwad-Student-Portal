@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.card button{
+    margin-bottom: 10px;
+}
+.card{
+    height: 70vh;
+}

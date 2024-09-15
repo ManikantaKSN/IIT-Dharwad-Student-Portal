@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forums.css">
+</head>
+<body>
+    <a href="/home" style="text-decoration:none;">
+        <header class="header">
+            <div>
+                <img src="/img/logo.png" alt="IIT Dharwad Logo">
+                <h1>IIT Dharwad Student Portal</h1>
+            </div>
+        </header>
+    </a>
+
+    <div class="card" id="askQuestionCard">
+        <h2>Ask a Question</h2>
+        <button onclick="redirectTo('/ask_question')">Let's Go</button>
+    </div>
+
+    <div class="card" id="answerQuestionsCard">
+        <h2>Answer the Questions</h2>
+        <button onclick="redirectTo('/answer_questions')">Let's Go</button>
+    </div>
+
+    <div class="card" id="viewConversationsCard">
+        <h2>View Previous Conversations</h2>
+        <button onclick="redirectTo('/view_conversations')">Let's Go</button>
+    </div>
+
+    <script src="/js/forums.js"></script>
+</body>
+</html>

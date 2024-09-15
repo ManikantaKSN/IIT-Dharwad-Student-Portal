@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #46024e;
+}
+header {
+  background-color: #46024e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+header a.home-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header img.home-icon {
+  height: 30px;
+  vertical-align: middle;
+}
+.wrap-text {
+  word-wrap: break-word;
+}
+.hero {
+  background-image: url('/event-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #b805cc;
+  text-align: center;
+  padding: 100px 0;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.event {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.event:hover {
+  background-color: #e0e0e0;
+}
+.event h2 {
+  margin-top: 0;
+  color: #b805cc;
+}
+.event-details {
+  margin-bottom: 20px;
+}
+.event-details p {
+  margin: 5px 0;
+}
+.registration-form {
+  display: none;
+}
+.registration-form.active {
+  display: block;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.registration-form input[type="submit"] {
+  background-color: #46024e;
+  color: #b805cc;
+  border: none;
+  cursor: pointer;
+}
+.registration-form input[type="submit"]:hover {
+  background-color: #46024e;
+}
+.hidden {
+  display: none;
+}
+.past-events {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.past-events h2 {
+  margin-top: 0;
+}
+.past-events ul {
+  list-style-type: none;
+  padding: 0;
+}
+.past-events li {
+  margin-bottom: 5px;
+}
+.search-filter {
+  background-color: #46024e;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+#searchInput {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+#filterSelect {
+  width: 28%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.home-icon{
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+}
+#eventContainer, .past-events{
+  padding: 10px;
+}

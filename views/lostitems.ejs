@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Items</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/lost_items.css">
+</head>
+<body>
+  <a href="/" style="text-decoration:none;">
+    <header>
+      <div>
+        <img src="/img/logo.png" alt="IIT Dharwad Logo">
+        <h1>IIT Dharwad Student Portal</h1>
+      </div>
+    </header>
+  </a>
+
+  <% if (lostItems.length > 0) { %>
+    <% lostItems.forEach(function(item) { %>
+      <div class="card">
+        <img src="<%= item.file %>" alt="Lost Item Image">
+        <div class="card-content">
+          <p><strong>Name:</strong> <%= item.name %></p>
+          <p><strong>Roll Number:</strong> <%= item.roll_number %></p>
+          <p><strong>Location:</strong> <%= item.location %></p>
+          <p><strong>Item Name:</strong> <%= item.item_name %></p>
+          <p><strong>Contact Number:</strong> <%= item.contact_number %></p>
+        </div>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <h2>No items found in the database.</h2>
+  <% } %>
+</body>
+</html>
