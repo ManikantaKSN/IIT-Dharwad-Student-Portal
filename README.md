@@ -1,6 +1,6 @@
 # IITDH Student Portal
 
-A web application designed to streamline student activities at IIT Dharwad, providing access to important resources, event management, and a discussion forum. Built using **Node.js**, **Express**, and **MongoDB**, the portal enables both students and administrators to interact with the platform seamlessly.
+The IITDH Student Portal is a web application for IIT Dharwad students, providing essential links, a comprehensive listing of upcoming events, a lost and found section, and a discussion forum. Developed with **Node.js**, **Express**, and **MongoDB**, it enhances the management and accessibility of these resources.
 
 ## Features
 
@@ -32,7 +32,7 @@ A web application designed to streamline student activities at IIT Dharwad, prov
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
 - **Frontend:** EJS, CSS
-- **Image Uploads:** Handled through multer for Lost and Found section.
+- **Image Uploads:** Handled through 'multer' for Lost and Found section.
 
 ## Setup Instructions
 
@@ -46,10 +46,10 @@ A web application designed to streamline student activities at IIT Dharwad, prov
 *The application will be accessible at http://localhost:3000.*
 
 ## Usage
-Visit the homepage to access quick links, view upcoming events, and explore the discussion forum.
-To report lost and found items, navigate to the "Lost and Found" section.
-Go to the discussion forum to get any doubt cleared by asking questions and receiving answers.
-For admin functionalities, log in with admin credentials to add or remove events and quick links.
+1. Visit the homepage to access quick links, view upcoming events, and explore the discussion forum.
+2. To report lost and found items, navigate to the "Lost and Found" section.
+3. Go to the discussion forum to get any doubt cleared by asking questions and receiving answers.
+4. For admin functionalities, log in with admin credentials to add or remove events and quick links.
 
 ## Future Enhancements
 Implementing notifications for new events or forum posts.
